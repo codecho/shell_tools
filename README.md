@@ -1,4 +1,11 @@
-<<<<<<< HEAD
+>这是一个shell脚本仓库，里面有很多实用的功能
+
+#### 功能列表
+- 禁止恶意ip登录
+- 定时清除nacos产生的日志
+- 通过一行脚本命令切换JDK版本
+---
+
 ### deny_illegal_ip.sh
 - backup hosts.deny
   ```bash
@@ -40,6 +47,10 @@
 
 ### switch_jdk.sh
 - replace $my_versions
+  ```shell
+  # here are jdk versions you installed
+  my_versions=([8]="/usr/java/jdk" [17]="/usr/java/jdk17")
+  ```
 - execute the script with target jdk version
   ```bash
   source switch_jdk.sh version
