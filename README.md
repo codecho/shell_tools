@@ -26,7 +26,7 @@
 
 ### clean_nacos_logs.sh
 - replace $LOG_PATH and $ONE_MONTH_AGO_SECONDS in shell
-  ```
+  ```shell
   LOG_PATH="/usr/nacos/bin/logs"
   ONE_MONTH_AGO_SECONDS=`date -d "30 day ago" "+%s"`
   ```
@@ -36,5 +36,14 @@
   
   0 0 * * * /usr/shell_study/clean_nacos_logs.sh
   ```
+---
 
+### switch_jdk.sh
+- replace $my_versions
+- execute the script with target jdk version
+  ```bash
+  source switch_jdk.sh version
+  or
+  . switch_jdk.sh version
+  ```
 
